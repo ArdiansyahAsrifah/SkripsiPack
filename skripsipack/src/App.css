@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212; /* Dark background for overall theme */
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191414; /* Dark navbar with Spotify green accent */
+  padding: 20px 40px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-size: 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  color: #1DB954; /* Spotify Green */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover {
+  color: #1ed760; /* Hover color change */
+}
+
+/* Home Section */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+/* Card Styles with Spotify Theme */
+.card {
+  width: 300px;
+  background-color: #191414;  /* Dark background similar to Spotify */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #1DB954; /* Spotify green border at the bottom */
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 20px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-link {
+  display: block;
+  background-color: #1DB954; /* Spotify green */
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  margin: 15px 20px;
+  transition: background-color 0.3s;
+}
+
+.card-link:hover {
+  background-color: #1ed760; /* Slightly lighter green for hover effect */
+}
+
+.card-link:focus,
+.card-link:active {
+  outline: none;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.dropdown button {
+  background-color: #191414; /* Dark button similar to Spotify */
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown button:hover {
+  background-color: #1ed760; /* Hover color change */
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 10px 0;
+  background-color: #191414;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  border-radius: 5px;
+}
+
+.dropdown.open ul {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 20px;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .dropdown button {
+    width: 100%;
+  }
+}
