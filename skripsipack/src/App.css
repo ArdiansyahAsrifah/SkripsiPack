@@ -197,3 +197,11 @@ h2 {
     width: 100%;
   }
 }
+
+/* Tambahkan gaya untuk separator di Home.css atau file CSS yang sesuai */
+
+.separator {
+  margin: 30px 0;
+  border-top: 2px solid #ddd; /* Membuat garis pemisah */
+  width: 100%;
+}

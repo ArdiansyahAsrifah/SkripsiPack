@@ -1,38 +1,45 @@
 import React from 'react';
 import Card from '../components/Card';
-import Dropdown from '../components/Dropdown';
+import Accordion from '../components/Accordion';
+import Timeline from '../components/Timeline';
+import nadyaImage from '../images/nadya.jpg';
+import juicyImage from '../images/juicy.jpg';
+import nassarImage from '../images/nassar.jpg';
+import realityImage from '../images/realityclub.jpg';
+import BrunoImage from '../images/brunomars.jpg';
+import TaylorImage from '../images/taylor.jpg';
 
 const Home = () => {
   const playlists = [
     {
-      title: 'Lofi Beats',
+      title: 'Cup of Nadya’s Lofi ☕',
+      link: 'https://open.spotify.com/playlist/5NnOQFD3i0N3cZbo1ILJkH?si=31moctBLRgKi6MFsho4VUQ',
+      image: nadyaImage
+    },
+    {
+      title: 'Luicy Love Notes 💖',
+      link: 'https://open.spotify.com/playlist/7igcxNG9Lvg7UmLIupoMDa?si=e1138458b7784a26',
+      image: juicyImage
+    },
+    {
+      title: 'Karaoke King Nassar 🎤',
+      link: 'https://open.spotify.com/playlist/07xeFKIeKaZZlwwgmkojHR?si=82a7deca90b4497d',
+      image: nassarImage
+    },
+    {
+      title: 'Dreamy Days Reality🌼',
       link: 'https://open.spotify.com/playlist/xyz',
-      image: 'https://i.scdn.co/image/abc'
+      image: realityImage
     },
     {
-      title: 'Focus Music',
+      title: 'Funky Vibes Bruno 🌟',
       link: 'https://open.spotify.com/playlist/xyz',
-      image: 'https://i.scdn.co/image/def'
+      image: BrunoImage
     },
     {
-        title: 'Focus Music',
-        link: 'https://open.spotify.com/playlist/xyz',
-        image: 'https://i.scdn.co/image/def'
-    },
-    {
-        title: 'Focus Music',
-        link: 'https://open.spotify.com/playlist/xyz',
-        image: 'https://i.scdn.co/image/def'
-    },
-    {
-        title: 'Focus Music',
-        link: 'https://open.spotify.com/playlist/xyz',
-        image: 'https://i.scdn.co/image/def'
-    },
-    {
-        title: 'Focus Music',
-        link: 'https://open.spotify.com/playlist/xyz',
-        image: 'https://i.scdn.co/image/def'
+      title: 'Swiftie Diaries 📖',
+      link: 'https://open.spotify.com/playlist/xyz',
+      image: TaylorImage
     }
   ];
 
@@ -44,7 +51,11 @@ const Home = () => {
           <Card key={index} {...playlist} />
         ))}
       </div>
-      <Dropdown />
+
+        {/* Pembatas antara Card Playlist dan Accordion */}
+      <Timeline/>
+      {/* Menambahkan Accordion untuk Skripsi Resources */}
+      <Accordion />
     </div>
   );
 };

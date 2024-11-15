@@ -1,0 +1,57 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #e0e0e0; /* Border lebih ringan */
+  border-radius: 12px; /* Membuat sudut lebih rounded */
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow lebih lembut */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: #f9f9f9; /* Background lebih soft */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Efek hover lebih besar */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow lebih tebal */
+  background-color: #ffffff; /* Background berubah saat hover */
+}
+
+.card-logo {
+  width: 50px; /* Lebih besar dari sebelumnya */
+  height: 50px; /* Sesuaikan dengan ukuran logo */
+  object-fit: contain;
+  margin: 15px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px; /* Ukuran lebih besar untuk judul */
+  margin-bottom: 10px;
+  font-weight: 600; /* Menebalkan judul */
+  color: #333; /* Warna judul lebih gelap */
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #666; /* Warna teks lebih soft */
+  margin-bottom: 15px;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: #4CAF50; /* Hijau untuk link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: #388e3c; /* Warna hijau sedikit lebih gelap saat hover */
+  text-decoration: underline;
+}
