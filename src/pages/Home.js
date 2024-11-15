@@ -29,17 +29,17 @@ const Home = () => {
     },
     {
       title: 'Dreamy Days Reality🌼',
-      link: 'https://open.spotify.com/playlist/xyz',
+      link: 'https://open.spotify.com/playlist/3uWQnyU5isNnh3EHwaTwHH?si=c87c7e63ea9d42ca',
       image: realityImage,
     },
     {
       title: 'Funky Vibes Bruno 🌟',
-      link: 'https://open.spotify.com/playlist/xyz',
+      link: 'https://open.spotify.com/playlist/1QoTgPJGbGNscnmTXBKMrj?si=893ee91bee204639',
       image: BrunoImage,
     },
     {
       title: 'Swiftie Diaries 📖',
-      link: 'https://open.spotify.com/playlist/xyz',
+      link: 'https://open.spotify.com/playlist/1zPHOXc3PB9J07Md3nGQ6q?si=592969f1514a4557',
       image: TaylorImage,
     },
   ];
